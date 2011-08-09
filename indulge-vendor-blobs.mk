@@ -14,21 +14,21 @@
 
 # Camera
 PRODUCT_COPY_FILES += \
-vendor/samsung/common/aries/proprietary/libcamera.so:obj/lib/libcamera.so \
-vendor/samsung/common/aries/proprietary/libcamera.so:system/lib/libcamera.so \
-vendor/samsung/common/aries/proprietary/libcamera_client.so:system/lib/libcamera.so \
-vendor/samsung/common/aries/proprietary/libActionShot.so:system/lib/libActionShot.so \
-vendor/samsung/common/aries/proprietary/libCaMotion.so:system/lib/libCaMotion.so \
-vendor/samsung/common/aries/proprietary/libcaps.so:system/lib/libcaps.so \
-vendor/samsung/common/aries/proprietary/libPanoraMax1.so:system/lib/libPanoraMax1.so \
-vendor/samsung/common/aries/proprietary/libPlusMe.so:system/lib/libPlusMe.so \
-vendor/samsung/common/aries/proprietary/libarccamera.so:system/lib/libarccamera.so \
-vendor/samsung/common/aries/proprietary/libcamerafirmwarejni.so:system/lib/libcamerafirmwarejni.so \
-vendor/samsung/common/aries/proprietary/libcameraservice.so:system/lib/libcameraservice.so \
-vendor/samsung/common/aries/proprietary/libseccamera.so:system/lib/libseccamera.so \
-vendor/samsung/common/aries/proprietary/libseccameraadaptor.so:system/lib/libseccameraadaptor.so \
-vendor/samsung/common/aries/proprietary/datapattern_420sp.yuv:system/cameradata/datapattern_420sp.yuv \
-vendor/samsung/common/aries/proprietary/datapattern_front_420sp.yuv:system/cameradata/datapattern_front_420sp.yuv \
+vendor/samsung/indulge/proprietary/libcamera.so:obj/lib/libcamera.so \
+vendor/samsung/indulge/proprietary/libcamera.so:system/lib/libcamera.so \
+vendor/samsung/indulge/proprietary/libcamera_client.so:system/lib/libcamera.so \
+vendor/samsung/indulge/proprietary/libActionShot.so:system/lib/libActionShot.so \
+vendor/samsung/indulge/proprietary/libCaMotion.so:system/lib/libCaMotion.so \
+vendor/samsung/indulge/proprietary/libcaps.so:system/lib/libcaps.so \
+vendor/samsung/indulge/proprietary/libPanoraMax1.so:system/lib/libPanoraMax1.so \
+vendor/samsung/indulge/proprietary/libPlusMe.so:system/lib/libPlusMe.so \
+vendor/samsung/indulge/proprietary/libarccamera.so:system/lib/libarccamera.so \
+vendor/samsung/indulge/proprietary/libcamerafirmwarejni.so:system/lib/libcamerafirmwarejni.so \
+vendor/samsung/indulge/proprietary/libcameraservice.so:system/lib/libcameraservice.so \
+vendor/samsung/indulge/proprietary/libseccamera.so:system/lib/libseccamera.so \
+vendor/samsung/indulge/proprietary/libseccameraadaptor.so:system/lib/libseccameraadaptor.so \
+vendor/samsung/indulge/proprietary/datapattern_420sp.yuv:system/cameradata/datapattern_420sp.yuv \
+vendor/samsung/indulge/proprietary/datapattern_front_420sp.yuv:system/cameradata/datapattern_front_420sp.yuv \
 
 # WiFi & Bluetooth
 PRODUCT_COPY_FILES += \
@@ -45,19 +45,11 @@ vendor/samsung/indulge/proprietary/lib/libgps.so:system/lib/libgps.so \
 vendor/samsung/indulge/proprietary/lib/libsecgps.so:system/lib/libsecgps.so \
 
 
-# Firmware files
-PRODUCT_COPY_FILES += \
-vendor/samsung/indulge/proprietary/seh/CE147F00.bin:system/firmware/CE147F00.bin \
-vendor/samsung/indulge/proprietary/seh/CE147F01.bin:system/firmware/CE147F01.bin \
-vendor/samsung/indulge/proprietary/seh/CE147F02.bin:system/firmware/CE147F02.bin \
-vendor/samsung/indulge/proprietary/seh/CE147F03.bin:system/firmware/CE147F03.bin
-
 # Display (3D)
 PRODUCT_COPY_FILES += \
-vendor/samsung/indulge/proprietary/lib/egl/libEGL_POWERVR_SGX540_120.so:system/lib/egl/libEGL_POWERVR_SGX540_120.so \
-vendor/samsung/indulge/proprietary/lib/egl/libGLES_android.so:system/lib/egl/libGLES_android.so \
-vendor/samsung/indulge/proprietary/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so:system/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so \
-vendor/samsung/indulge/proprietary/lib/egl/libGLESv2_POWERVR_SGX540_120.so:system/lib/egl/libGLESv2_POWERVR_SGX540_120.so \
+vendor/samsung/indulge/proprietary/lib/egl/libEGL.so:system/lib/egl/libEGL.so \
+vendor/samsung/indulge/proprietary/lib/egl/libGLESv1_CM.so:system/lib/egl/libGLESv1_CM.so \
+vendor/samsung/indulge/proprietary/lib/egl/libGLESv2.so:system/lib/egl/libGLESv2.so \
 vendor/samsung/indulge/proprietary/lib/libIMGegl.so:system/lib/libIMGegl.so \
 vendor/samsung/indulge/proprietary/lib/libpvr2d.so:system/lib/libpvr2d.so \
 vendor/samsung/indulge/proprietary/lib/libsrv_init.so:system/lib/libsrv_init.so \
@@ -75,7 +67,8 @@ vendor/samsung/indulge/proprietary/lib/hw/sensors.default.so:system/lib/hw/senso
 # RIL
 PRODUCT_COPY_FILES += \
 vendor/samsung/indulge/proprietary/lib/libril.so:system/lib/libril.so \
-vendor/samsung/indulge/proprietary/lib/libsec-ril40.so:system/lib/libsec-ril40.so \
+vendor/samsung/indulge/proprietary/lib/libsec-ril40.so:system/lib/libsec-ril40-cdma.so \
+vendor/samsung/indulge/proprietary/lib/libsec-ril40.so:system/lib/libsec-ril40-lte.so \
 vendor/samsung/indulge/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so
 
 # PPP

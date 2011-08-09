@@ -133,6 +133,7 @@ media/battery_charging_95.qmg
 media/battery_charging_100.qmg
 media/chargingwarning.qmg
 media/Disconnected.qmg
+init.rc
 "
 
 for FILE in $FILES; do

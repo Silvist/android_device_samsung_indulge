@@ -26,10 +26,6 @@ TARGET_BOARD_PLATFORM := s5pv210
 TARGET_BOOTLOADER_BOARD_NAME := aries
 ##FIXME#TARGET_RECOVERY_INITRC := device/samsung/indulge/recovery.rc
 
-# Releasetools
-TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := ./device/samsung/indulge/releasetools/indulge_ota_from_target_files
-TARGET_RELEASETOOL_IMG_FROM_TARGET_SCRIPT := ./device/samsung/indulge/releasetools/indulge_img_from_target_files
-
 # Camera defines
 USE_CAMERA_STUB := false
 ifeq ($(USE_CAMERA_STUB),false)
@@ -90,7 +86,4 @@ BOARD_CUSTOM_BOOTIMG_MK := device/samsung/aries-common/shbootimg.mk
 TARGET_NO_RECOVERY := true
 TARGET_RECOVERY_PRE_COMMAND="echo 1 > /cache/.startrecovery; sync;"
 
-# Include aries specific stuff
--include device/samsung/aries-common/aries.mk
 
-##FIXME#TARGET_OTA_ASSERT_DEVICE := aries,indulge,SCH-R910

@@ -29,3 +29,4 @@ packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:/system/etc/p
 # Pick up overlay for features that depend on non-open-source files
 DEVICE_PACKAGE_OVERLAYS := vendor/samsung/indulge/overlay
 
+$(call inherit-product, vendor/samsung/indulge/indulg-vendor-blobs.mk)
